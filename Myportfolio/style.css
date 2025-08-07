@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #1abc9c;
+  --text-dark: #2c3e50;
+  --text-light: #7f8c8d;
+  --background: #f4f4f4;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: var(--background);
+color: var(--text-dark);
+line-height: 1.6;
+}
+header.hero
+{
+  background-color: var(--primary-color);
+ text-align: center;
+ padding: 4rem 1rem;
+ color: var(--white);
+ animation:yohoho 3s ease 0s infinite ;
+}
+.hero h1{
+  font-size: 2.5rem;
+}
+.hero p
+{
+  font-size: 1.2rem;
+  margin:1rem;
+  
+}
+@keyframes yohoho
+{
+  0%
+  {
+    background-color: #1abc9c;
+  }
+  50%
+  {
+    background-color: #094291;
+  }
+  100%
+  {
+    background-color: #000000;
+  }
+}
+.btn
+{
+  background: var(--white);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 3s;
+  display: inline-block;
+  
+}
+.btn:hover
+{
+  background: #e0f7f4;
+  transform:scale(1.1);
+}
+section{
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+.aboutme ,.projects,#projects
+{
+  text-align: center;
+}
+.projects .projecto{
+  gap:1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+justify-content: center;
+transition: all 0.3s linear;
+
+}
+
+.projects h2
+{
+  flex-basis: 100%;
+  padding-bottom: 2rem;
+  text-align: center justify;
+}
+
+.project
+{
+ 
+    background-color:var(--white);
+    padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  color:#444;
+  width:250px
+}
+.contact
+{
+  margin-bottom:2rem;
+
+}
+.balman
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+ 
+}
+footer
+{
+  background-color: #677677;
+  padding: 40px;
+  text-align: center;
+}
+.holo,.holo1
+{
+  margin-right: 10px;
+  animation: billa 1s linear 1;
+}
+.project1:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s linear;
+}
+.project2:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s linear;
+}
+.project3:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s linear;
+}
+.holo1:hover{
+transform: scale(1.2);
+}
+.holo:hover{
+transform: scale(1.2);
+}
+@keyframes billa
+{
+  from {
+    transform:rotatey(0deg);
+  }
+  to{
+    transform:rotatey(360deg);
+  }
+}
+.project:hover{
+ box-shadow: 0 40px 70px rgba(0,0,0,0.15);}
